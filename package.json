@@ -1,0 +1,38 @@
+{
+    "name": "custom-boilerplate",
+    "version": "0.0.1",
+    "description": "My Custom Boilerplate",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tzs007/boilerplate.git"
+    },
+    "author": "HelloBonsai",
+    "bugs": {
+        "url": "https://github.com/tzs007/boilerplate.git"
+    },
+    "homepage": "https://github.com/tzs007/boilerplate/blob/master/README.md",
+        "devDependencies": {
+        "gulp": "^3.8.11",
+        "gulp-concat": "^2.5.2",
+        "gulp-notify": "^2.2.0",
+        "gulp-plumber": "^1.0.0",
+        "gulp-sass": "^1.3.3",
+        "gulp-sourcemaps": "^1.5.0",
+        "gulp-uglify": "^1.1.0"
+    },
+    "scripts": {
+        "preinstall": "npm update -g bower",
+        "preinstall": "npm update -g gulp",
+        "preinstall": "npm update -g node-sass",
+        "preinstall": "npm update -g browser-sync",
+        "preinstall": "npm update -g dploy",
+        "preinstall": "bower install -p bootstrap-sass",
+        "preinstall": "bower install -p compass-mixins",
+        "preinstall": "bower install -p jQuery-Form-Validator",
+        "preinstall": "bower install -p html5shiv",
+        "preinstall": "bower install -p respondJS",
+        "preinstall": "bower install -p trmix",
+        "preinstall": "bower update",
+        "preinstall": "dploy install"
+    }
+}
