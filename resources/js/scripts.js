@@ -1,3 +1,3 @@
 $(function(){
-	console.log(jQuery.fn.jquery);
+    console.log(jQuery.fn.jquery);
 });

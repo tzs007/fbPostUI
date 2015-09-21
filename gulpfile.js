@@ -24,13 +24,14 @@ var paths = {
         sourceSass + '/**/*.scss'
     ],
 
-    vendor: [
+    js: [
         vendor + '/jquery/dist/jquery.min.js',
         vendor + '/respond/dest/respond.min.js',
         vendor + '/trmix/dist/trmix.min.js',
-        vendor + '/html5shiv/dist/html5shiv.min.js'
-        vendor + '/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
+        vendor + '/html5shiv/dist/html5shiv.min.js',
+        vendor + '/bootstrap-sass/assets/javascripts/bootstrap.min.js',
         vendor + '/jQuery-Form-Validator/form-validator/jquery.form-validator.min.js',
+        sourceJs + '/scripts.js'
     ]
 };
 
@@ -78,20 +79,20 @@ gulp.task( 'sass', [], function() {
             }
         }))
         .pipe(sourcemaps.write('../css'))
-        .pipe(gulp.dest(outputCss));
+        .pipe(gulp.dest(outputCss))
         .pipe(browserSync.stream());
 });
 
 /* --- Javascript compilers --- */
 // Core Javascript compile
 gulp.task( 'scripts', [], function() {
-    var hasError = !Helper.isFileExist(paths.vendor);
+    var hasError = !Helper.isFileExist(paths.js);
 
     if(hasError) {
         return false;
     }
 
-    return gulp.src( paths.vendor )
+    return gulp.src( paths.js )
         .pipe(uglify({
             mangle: false, // mangle: Turn on or off mangling
             beautify: false, // beautify: beautify your code for debugging/troubleshooting purposes

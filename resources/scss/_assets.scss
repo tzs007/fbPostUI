@@ -1,13 +1,15 @@
+// Import custom Bootstrap 3 variables and kick original's ass
+@import "./bootstrap/variables";
+
 // Import 3rd party libraries
-@import "../lib/lesshat/build/lesshat-prefixed.less";
-@import "../lib/bootstrap/less/bootstrap.less";
-@import "../lib/fontawesome/less/font-awesome.less"
+//@import "../vendor/compass-mixins/lib/compass";
+//@import "../vendor/compass-mixins/lib/animate";
+//@import "../vendor/compass-mixins/lib/lemonade";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "../lib/fontawesome/less/font-awesome.less"
 
 // Import modified less files
 // BrowseHappy extension
-@import "browsehappy/style.less";
-
-// Import Bootstrap 3
-@import "bootstrap/variables.less";
+@import "browsehappy/style";
 
 // Import theme styles
