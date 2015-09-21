@@ -13,3 +13,11 @@
 8. Run ```gulp```
 
 If you need update your javascripts just run ```gulp scripts``` again.
+
+If you don't need any vendor package, just type ```bower uninstall {package_name}```
+
+Recommended packages:
+
+- trmix
+- respondJS
+- html5shiv
