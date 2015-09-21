@@ -13,12 +13,6 @@
     "license": "MIT",
     "homepage": "https://github.com/tzs007/boilerplate/blob/master/README.md",
     "scripts": {
-        "install": "bower install -p bootstrap-sass",
-        "install": "bower install -p compass-mixins",
-        "install": "bower install -p jQuery-Form-Validator",
-        "install": "bower install -p html5shiv",
-        "install": "bower install -p respondJS",
-        "install": "bower install -p trmix",
         "install": "dploy install"
     },
     "dependencies" : {
