@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Boilerplate</title>
+    <title>FB Post Box</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="cleartype" content="on">
@@ -14,35 +15,17 @@
     <meta name="description" content="">
     <meta name="copyright" content="">
     <meta name="robots" content="index, follow">
-    <!-- ogp.me -->
-    <meta property="og:title" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta property="og:description" content="">
-    <!-- meta property="fb:app_id" content=""/> -->
-    <!-- appicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./resources/images/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./resources/images/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./resources/images/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./resources/images/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./resources/images/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./resources/images/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./resources/images/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./resources/images/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./resources/images/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./resources/images/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./resources/images/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/icons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/png" sizes="16x16" href="./resources/images/icons/favicon-16x16.png">
-    <link rel="manifest" href="./resources/images/icons/manifest.json">
-    <meta name="msapplication-TileImage" content="./resources/images/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
 
     <!-- styles -->
     <link rel="stylesheet" href="./resources/css/style.css">
-    <!--[if lt IE 9]><style type="text/css" media="screen">.hidden-ie{display:none;visibility:hidden;}</style><![endif]-->
+    <!--[if lt IE 9]>
+        <style type="text/css" media="screen">
+            .hidden-ie {
+                display:none;
+                visibility:hidden;
+            }
+        </style>
+    <![endif]-->
 
     <!-- scripts -->
     <script src="./resources/js/dist/scripts.min.js"></script>
@@ -51,13 +34,166 @@
     </script>
 
 </head>
+
 <body>
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <div id="page-wrapper" class="hidden-ie">
-        <p>Hello World!</p>
+        <div class="postbox">
+            <div class="postbox-wrapper">
+                <div class="postbox-header">
+                    <div class="postbox-header-data">
+                        <div class="avatar">
+                            <img src="//placeimg.com/40/40/people" alt="">
+                        </div>
+                        <div class="postbox-header-title">
+                            <strong class="postbox-header-title-name">React</strong>
+                            <p class="postbox-header-title-created-at">2016. december 7. •
+                                <i class="fas fa-fw fa-globe"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="postbox-header-control">
+                        <a href="#">
+                            <i class="fas fa-fw fa-ellipsis-h fa"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="postbox-message-text">
+                    <p>
+                        Upgrading your project to use a newer version of React Native is now easier than
+                        ever! React Native now uses Git to resolve any conflicts
+                        during the upgrade process.
+                    </p>
+                </div>
+
+                <div class="postbox-content">
+                    <div class="postbox-content-image" style="background-image:url('//placeimg.com/476/249/tech')"></div>
+                    <div class="postbox-content-text">
+                        <a href="#">
+                            <h2>Easier Upgrades Thanks to Git</h2>
+                            <p>Upgrading to new versions of React Native has been difficult.
+                                You might have seen something like this before:</p>
+                        </a>
+                        <div class="postbox-content-footer">
+                            <a href="#">facebook.github.io</a>
+                            <button class="btn-info">További információ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="postbox-social-control">
+                    <div class="postbox-social-control-item">
+                        <a href="">
+                            <i class="far fa-fw fa-thumbs-up"></i> Tetszik
+                        </a>
+                    </div>
+                    <div class="postbox-social-control-item">
+                        <a href="#">
+                            <i class="far fa-fw fa-comment"></i> Hozzászólás</a>
+                    </div>
+                    <div class="postbox-social-control-item">
+                        <a href="#">
+                            <i class="fas fa-fw fa-share"></i> Megosztás
+                        </a>
+                    </div>
+                    <div class="postbox-social-control-item">
+                        <a href="#">
+                            <img src="//placeimg.com/20/20/people" class="owner-avatar" alt="">
+                            <i class="fas fa-fw fa-caret-down"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="postbox-wrapper">
+
+                <div class="postbox-social-reactions">
+                    <div class="postbox-social-reactions-icons">
+                        <i class="fas fa-fw fa-thumbs-up reaction like"></i>
+                        <i class="fas fa-fw fa-heart reaction love"></i>
+                        <i class="far fa-fw fa-frown reaction sad"></i>
+                    </div>
+                    <div class="postbox-social-reactions-users">
+                        <a href="#">Balajin Krishnan</a>,
+                        <a href="#">Fabi Ferreira</a> és további 143 ember
+                    </div>
+                    <div class="postbox-reactions-order">
+                        <a href="#">
+                            A legérdekesebbek
+                            <i class="fas fa-fw fa-caret-down"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="postbox-share-counter">
+                    <a href="#">6 megosztás</a>
+                </div>
+
+                <div class="postbox-comments">
+                    <div class="postbox-comments-input">
+                        <div class="avatar avatar-sm">
+                            <img src="//placeimg.com/30/30/people" alt="">
+                        </div>
+                        <div class="postbox-comments-input-field">
+                            <input type="text" placeholder="Hozzászólás írása...">
+                            <div class="postbox-comments-add-icon">
+                                <a href="#">
+                                    <i class="far fa-fw fa-smile"></i>
+                                </a>
+                            </div>
+                            <div class="postbox-comments-add-icon">
+                                <a href="#">
+                                    <i class="fas fa-fw fa-camera"></i>
+                                </a>
+                            </div>
+                            <div class="postbox-comments-add-icon">
+                                <a href="#">
+                                    <i class="fas fa-fw fa-image"></i>
+                                </a>
+                            </div>
+                            <div class="postbox-comments-add-icon">
+                                <a href="#">
+                                    <i class="fas fa-fw fa-sticky-note"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postbox-comments-helper-text">
+                        <small>A közzétételhezd nyomd le az Enter billentyűt.</small>
+                    </div>
+                    <div class="postbox-comments-list">
+                        <div class="postbox-comment">
+                            <div class="avatar">
+                                <img src="//placeimg.com/40/40/people" alt="">
+                            </div>
+                            <div class="postbox-comment-text">
+                                <div class="postbox-comment-text-bubble">
+                                    <strong>Xiao Chang Di</strong> I'm a developer from China.
+                                    We're using React at the moment. I'd like to
+                                    ask if we're a small company that doesn't involve
+                                    competition with Facebook. Can we use React safely?
+                                </div>
+                                <div class="postbox-comment-text-footer">
+                                    <a href="#" class="postbox-comment-like">Tetszik</a> •
+                                    <a href="#" class="postbox-comment-reply">Válasz</a> •
+                                    <span class="postbox-comment-created-at">33 hete</span>
+                                </div>
+                                <div class="postbox-comment-replies">
+                                    <a href="#">
+                                        <i class="fas fa-fw fa-reply fa-flip-vertical fa-flip-horizontal"></i> 1 válasz
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

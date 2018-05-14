@@ -15,7 +15,7 @@
     "scripts": {
         "install": "dploy install"
     },
-    "dependencies" : {
+    "dependencies": {
         "gulp": "latest",
         "bower": "latest",
         "node-sass": "latest",
